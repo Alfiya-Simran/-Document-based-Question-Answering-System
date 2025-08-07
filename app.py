@@ -21,3 +21,12 @@ if uploaded_file:
         response = qa_chain.run(query)
         st.markdown("### 📌 Answer:")
         st.write(response)
+        st.set_page_config(
+    page_title="Doc Q&A System",
+    page_icon="📄"
+)
+
+st.image("logo.png", width=120)  # Put logo.png in root of your GitHub repo
+st.title("📄 Document-based Question Answering System")
+
+
